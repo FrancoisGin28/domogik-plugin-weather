@@ -164,7 +164,7 @@
 @ quelle est la meteo aujourd'hui
 */
 
-// без указаня места
+// без указания места
 
 + shortcut meteo *
 - <call>get_forecast <star></call>
