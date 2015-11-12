@@ -53,55 +53,55 @@
     #    3200 : "inconnu"
     #}
     condition_text_list = {
-        0 : u"il y aura une tornade",
-        1 : u"il y aura une tempête tropicale",
-        2 : u"il y aura un ouragan",
-        3 : u"il y aura un grosse tempête",
-        4 : u"il y aura des orages",
-        5 : u"il y aura de la pluie et de la neige",
-        6 : u"il y aura de la pluie et de la neige fondue",
-        7 : u"il y aura de la neige et de la neige fondue",
-        8 : u"il y aura de la bruine verglaçante",
-        9 : u"il y aura de la bruine",
-        10 : u"il y aura de la pluie verglaçante",
-        11 : u"il y aura de grosses averses",
-        12 : u"il y aura de grosses averses",
-        13 : u"il y aura des averses de neige",
-        14 : u"il y aura de légères averses de neige",
-        15 : u"il y aura des bourrasques de neige",
-        16 : u"il neigera",
-        17 : u"il grêlera",
-        18 : u"il y aura de la neige fondue",
-        19 : u"il y aura de la poussière",
-        20 : u"le temps sera brumeux",
-        21 : u"il y aura du brouillard",
-        22 : u"le temps sera enfumé",
-        23 : u"il y aura la tempête",
-        24 : u"il y aura du vent",
-        25 : u"le temps sera froid",
-        26 : u"le ciel sera nuageux",
-        27 : u"le ciel sera assez nuageux",
-        28 : u"le ciel sera assez nuageux",
+        0 : u"ожидается торнадо",
+        1 : u"ожидается тропический шторм",
+        2 : u"ожидается ураган",
+        3 : u"ожидается сильная гроза",
+        4 : u"будет гроза",
+        5 : u"будет дождь со снегом,
+        6 : u"ожидается мокрый снег с дождем",
+        7 : u"ожидается мокрый снег",
+        8 : u"ожидается изморозь",
+        9 : u"ожидается морось",
+        10 : u"ожидается дождь, переходящий в снег",
+        11 : u"ожидаются ливни",
+        12 : u"ожидаются ливни",
+        13 : u"ожидается порывистый снег",
+        14 : u"ожидается легкий снег",
+        15 : u"будет метель",
+        16 : u"ожидается снег",
+        17 : u"ожидается град",
+        18 : u"ожидается дождь со снегом",
+        19 : u"будет пыльно",
+        20 : u"будет туман",
+        21 : u"будет дымка",
+        22 : u"будет смог",
+        23 : u"будет порывистый ветер",
+        24 : u"будет ветренно",
+        25 : u"будет холодно",
+        26 : u"будет облачно",
+        27 : u"будет сильная облачность",
+        28 : u"будет сильная облачность",
         29 : u"небо будет облачным",
         30 : u"небо будет облачным",
         31 : u"небо будет ясным",
         32 : u"будет солнечно",
-        33 : u"il fera beau",
-        34 : u"il fera beau ",
-        35 : u"будет дождь и град",
-        36 : u"il fera chaud",
-        37 : u"местами грозы",
-        38 : u"il y aura des orages éparses",
-        39 : u"il y aura des orages éparses",
-        40 : u"il y aura des averses éparses",
-        41 : u"il y aura de grosses chutes de neige",
-        42 : u"il y aura des averses de neige éparses",
-        43 : u"il y aura de grosses chutes de neige",
-        44 : u"le ciel sera partiellement nuageux",
-        45 : u"il y aura des averses orageuses",
-        46 : u"il y aura des averses de neiges",
-        47 : u"il y aura des averses orageuses isolées",
-        3200 : u"allez savoir quel temps il fera boudiou"
+        33 : u"будет хорошая погода",
+        34 : u"будет хорошая погода",
+        35 : u"будет дождь c градом",
+        36 : u"будет жарко",
+        37 : u"ожидается гроза",
+        38 : u"временами грозы",
+        39 : u"временами грозы",
+        40 : u"местами ожидается дождь,
+        41 : u"будет сильный снег",
+        42 : u"местами ожидается снегопад",
+        43 : u"ожидается сильный снегопад",
+        44 : u"будет переменная облачность",
+        45 : u"ожидается гроза",
+        46 : u"возможен снегопад",
+        47 : u"временами ожидаются ливни",
+        3200 : u"к сожалению прогноз не доступен"
     }
 
     days_absolute = {
@@ -113,14 +113,14 @@
         u"пятница" : 4,
         u"пятницу" : 4,
         u"суббота" : 5,        
-        u"суббота" : 5,
+        u"субботу" : 5,
         u"воскресенье" : 6
     }
 
     days_relative = {
         u"сегодня" : 0,
         u"сеичас" : 0,
-        u"в течение дня" : 1,
+        u"течение дня" : 1,
         u"завтра" : 1,
         u"послезавтра" : 2,
         u"через день" : 2,
@@ -129,8 +129,8 @@
     }
 
     ERROR_UNKNOWN_DAY = u"Я не знаю погоду на этот день"
-    ERROR_UNKNOWN_LOCATION = u"Je ne connais pas cette endroit"
-    SEPARATOR = "__SEP__"
+    ERROR_UNKNOWN_LOCATION = u"Я не знаю место для которого нужен прогноз"
+    SEPARATOR = u"__SEP__"
 
     cfg_i18n = {}
     cfg_i18n['condition_text_list'] = condition_text_list
@@ -141,7 +141,7 @@
     cfg_i18n['SEPARATOR'] = SEPARATOR
 
     # returned text
-    cfg_i18n['TXT_IN_LOCATION'] = u"A {0}, "
+    cfg_i18n['TXT_IN_LOCATION'] = u"В {0}, "
     cfg_i18n['TXT_CONDITION_AND_TEMPERATURES'] = u"{0}. Температура будет между {1} и {2} градусов. "
 
     from domogik_packages.plugin_weather.lib.rs_weather import get_forecast
@@ -152,10 +152,10 @@
 
 
 
-// ##feature## donner la météo
+// ##feature## озвучить прогноз погоды
 
 /* ##suggest##
-? .*meteo.*(сегодня|сеичас|в течение дня|завтра|послезавтра|через день|через три дня|через четыре дня|понедельник|вторник |сред.|четверг|пятниц.|суббот.|воскресенье).*
+? .*meteo.*(сегодня|сеичас|течение дня|завтра|послезавтра|через день|через три дня|через четыре дня|понедельник|вторник|сред.|четверг|пятниц.|суббот.|воскресенье).*
 @ quelle est la meteo <star1>
 */
 
@@ -164,12 +164,7 @@
 @ quelle est la meteo aujourd'hui
 */
 
-// Attention !
-// L'espace dans [de ] est important, sinon "... demain" est interprété "[de] main"
-// oui c'est couillon...
-
-
-// un jour
+// без указаня места
 
 + shortcut meteo *
 - <call>get_forecast <star></call>
@@ -177,36 +172,38 @@
 + какая погода
 @ shortcut meteo 0
 
-+ какая погода будет *
++ (какои|скажи|узнаи|разведаи) прогноз погоды [на |в ] *
+@ shortcut meteo <star2>
+
+
++ какая погода [будет] *
 @ shortcut meteo <star>
 
-+ какая погода будет [в ][во ] *
+
++ какая погода [будет] [в |во ] *
 @ shortcut meteo <star>
 
-+ quel temps [fait][fera][-][t][-]il *
-@ shortcut meteo <star>
-
-+ (dis|donne|donnes)[-]moi (les previsions|les previsions meteo|la meteo) [de ] *
++ (какои|узнаи|скажи|разведаи) (погоду|прогноз) [на |в ] *
 @ shortcut meteo <star3>
 
-// un jour a ...
+// с указанием места
 
 + shortcut meteo * a *
 - <call>get_forecast <star1>__SEP__<star2></call>
 
-+ quel[le] est la meteo a *
++ какая погода в *
 @ shortcut meteo 0 <star>
 
-+ quel[le] est la meteo [de ] * a *
++ (какои|скажи|узнаи|разведаи) прогноз погоды [на |в ] * в *
+@ shortcut meteo <star2>__SEP__<star3>
+
++ какая погода [будет] * в *
 @ shortcut meteo <star1>__SEP__<star2>
 
-+ quel[le] sera la meteo [de ] * a *
++ какая погода [будет] [в |во ] * в *
 @ shortcut meteo <star1>__SEP__<star2>
 
-+ quel temps [fait][fera][-][t][-]il * a *
-@ shortcut meteo <star1>__SEP__<star2>
-
-+ (dis|donne|donnes)[s][-]moi (les previsions|les previsions meteo|la meteo) [de ] * a *
++ (какои|скажи|узнаи|разведаи) (погоду|прогноз) [на |в ] * в *
 @ shortcut meteo <star3>__SEP__<star4>
 
 
