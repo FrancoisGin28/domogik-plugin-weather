@@ -130,9 +130,10 @@
 
     ERROR_UNKNOWN_DAY = u"Я не знаю погоду на этот день"
     ERROR_UNKNOWN_LOCATION = u"Я не знаю место для которого нужен прогноз"
-    SEPARATOR = "__SEP__"
+    SEPARATOR = u"__SEP__"
 
     cfg_i18n = {}
+    cfg_i18n['locale'] = "ru_RU"
     cfg_i18n['condition_text_list'] = condition_text_list
     cfg_i18n['days_absolute'] = days_absolute
     cfg_i18n['days_relative'] = days_relative
@@ -145,7 +146,8 @@
     cfg_i18n['TXT_CONDITION_AND_TEMPERATURES'] = u"{0}. Температура будет между {1} и {2} градусов. "
 
     from domogik_packages.plugin_weather.lib.rs_weather import get_forecast
-    result = get_forecast(cfg_i18n, args)
+    print("ARGS={0}".format(args))
+    result = get_forecast(cfg_i18n, args, rs.log)
     return result
 
 < object
@@ -163,6 +165,13 @@
 ? .*meteo.*
 @ quelle est la meteo aujourd'hui
 */
+
+// alias
+! array weatherLaMeteo = погода|прогноз|прогноз погоды|температура
+! array weatherFaitIl = fait il|fait-il|fera t il|fera-t-il
+! array weatherDisMoi = какои|скажи|узнаи|разведаи|скажи мне
+! array weatherDe = во|на|в
+! array weatherA = a|dans
 
 // без указания места
 
@@ -192,7 +201,7 @@
 - <call>get_forecast <star1>__SEP__<star2></call>
 
 + какая погода в *
-@ shortcut meteo 0 <star>
+@ shortcut meteo 0__SEP__<star1>
 
 + (какои|скажи|узнаи|разведаи) прогноз погоды [на |в ] * в *
 @ shortcut meteo <star2>__SEP__<star3>
